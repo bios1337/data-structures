@@ -11,6 +11,7 @@ class UnionFind:
         while root != self.ids[root]:
             root = self.ids[root]
 
+        # setting root for each component found in the path
         while x != root:
             next = self.ids[x]
             self.ids[x] = root
