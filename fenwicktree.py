@@ -30,7 +30,7 @@ class FenwickTree:
         total = 0
         while i != 0:
             total += self.tree[i]
-            i &= ~self.lsb(i)
+            i &= ~self.lsb(i)  # i -= self.lsb(i)
 
         return total
 

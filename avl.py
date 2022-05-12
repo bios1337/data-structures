@@ -148,7 +148,7 @@ class AVLTree:
     def rightRightCase(self, node):
         return self.leftRotate(node)
 
-    def leftRightase(self, node):
+    def leftRightCase(self, node):
         node.left = self.leftRotate(node.left)
         return self.leftLeftCase(node)
 
@@ -173,7 +173,6 @@ avl.insert(100)
 avl.insert(1000)
 avl.insert(-100)
 
-avl.printInOrder()
 print(avl.includes(0))
 print(avl.includes(-100))
 avl.remove(-100)
@@ -181,7 +180,12 @@ print(avl.includes(-100))
 avl.insert(100)
 avl.insert(1000)
 avl.insert(-100)
-print('''''''')
+for i in range(1000):
+    avl.insert(100)
+
+
 avl.printInOrder()
+
+print(avl.root.height);
 
 
