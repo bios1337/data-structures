@@ -20,4 +20,4 @@ def subset_sum(arr: list[int], sum):
 
     return dp[length][sum]
 
-print(subset_sum([1, 2, 4, 6, 8], 20))
+print(subset_sum([1,2,3], 8))
