@@ -26,7 +26,7 @@ def solve(arr, i, j):
         mn = min(mn, ans)
         
 
-    return ans
+    return mn
 
 print(calculateMinCost([10, 20, 30, 10]))
 
